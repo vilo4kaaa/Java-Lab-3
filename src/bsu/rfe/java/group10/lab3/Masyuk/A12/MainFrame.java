@@ -237,7 +237,7 @@ public class MainFrame extends JFrame {
                 new Double(hboxRange.getMinimumSize().getHeight()).intValue()*2));
 
 // Установить область в нижнюю (южную) часть компоновки
-        getContentPane().add(hboxRange, BorderLayout.SOUTH);
+        getContentPane().add(hboxRange, BorderLayout.NORTH);
 
 // Создать кнопку "Вычислить"
         JButton buttonCalc = new JButton("Вычислить");
@@ -318,7 +318,7 @@ public class MainFrame extends JFrame {
                 Double(hboxButtons.getMinimumSize().getHeight()).intValue()*2));
 
 // Разместить контейнер с кнопками в верхней (северной) области граничной компоновки
-        getContentPane().add(hboxButtons, BorderLayout.NORTH);
+        getContentPane().add(hboxButtons, BorderLayout.SOUTH);
 
 // Область для вывода результата пока что пустая
         hBoxResult = Box.createHorizontalBox();
